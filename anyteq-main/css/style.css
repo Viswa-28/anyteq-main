@@ -1,0 +1,282 @@
+.banner img {
+  height: 420px;
+  width: 100%;
+    object-fit: cover;
+    /* object-position: center; */
+
+}
+
+
+
+/* about */
+.about {
+    /* background-color: #070707; */
+    /* padding: 60px 0; */
+}
+
+.about-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 8px;
+}
+
+.about-text {
+    background-color: #6688F6;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    color: #fff;
+    line-height: 1.7;
+}
+
+
+
+
+/* second */
+
+.second .icon{
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px;    
+}
+.second .icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.second .icon:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #61006C;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #FFFFFF;
+    padding: 10px;
+   
+    cursor: pointer;
+    text-align: center;
+
+}
+.parent{
+    border:  0.5px solid;
+   margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+.details {
+  display: none;
+  position: absolute;
+  background-color: #61006C;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* width: 220px; */
+  text-align: center;
+  font-size: 18px;
+  color: #fef4f4;
+  /* margin-top: 10px; */
+  z-index: 10;
+ 
+}
+
+.details.show{
+    display: block;
+}
+
+/* third */
+.third{
+    height: 400px;
+    background-color: #000B28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* padding: 20px; */
+}
+
+.third h2{
+    /* font-size: clamp(1.25rem, 0.6071rem + 3.2143vw, 3.5rem); */
+    color: #FFFFFF;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    width: 50%;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+/* test */
+
+
+
+
+/* how we works */
+.work{
+    height: 500px;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+    width: 100%;
+}
+.work .row{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+}
+
+
+.svg{
+    height: 100px;
+    width: 100px;
+    margin: 20px
+}
+
+
+/* carousel */
+
+.swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+      }
+
+      .swiper-slide {
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+     
+       
+      }
+      .mySwiper .swiper-wrapper {
+  transition-timing-function: linear !important; /* No easing, constant speed */
+}
+      .swiper-slide img {
+        display: block;
+        width: 60%;
+        height: 50%;
+        object-fit: cover;
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+@media screen and (max-width: 968px) {
+    .banner img {
+        height: 300px;
+    }
+    .work{
+    height: auto;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #070707;
+    padding: 20px;
+    width: 100%;
+}
+.third{
+    height: auto;
+    background-color: #000B28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* padding: 20px; */
+}
+    .third h2{
+        width: 90%;
+        font-size: 1.5rem;
+    }
+    .second .icon {
+        width: 120px;
+        height: 120px;
+    }
+    .about-img {
+        height: 300px;
+    }
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+    .about-text p {
+        font-size: 1rem;
+    }
+    .parent {
+        width: 100%;
+        padding: 10px;
+        margin: 10px 0;
+    }
+    .details {
+        width: 100%;
+        font-size: 16px;    
+    }
+    .details.show {
+        position: static;
+        margin-top: 10px;
+    }
+    
+}
+
+
+
+
+
+@media (max-width: 468px) {
+    .banner img {
+        height: 220px;
+    }
+
+    .second .icon {
+        width: 100px;
+        height: 100px;
+    }
+    .third h2 {
+        width: 90%;
+        font-size: 1.2rem;
+    }
+}
