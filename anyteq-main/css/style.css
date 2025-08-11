@@ -192,6 +192,42 @@
 
 
 
+      .cta{
+        background-image: url('../images/ctaaa.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    /* background-color: #61006C; */
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    margin: 20px 0;
+    transition: background-color 0.3s ease;
+    height: 300px;
+
+      }
+      .cta .container{
+     margin-top: 100px;
+      }
+      .cta h2{
+        font-size: 2rem;
+        margin-bottom: 10px;
+        color: #FFFFFF;
+        font-weight: 700;
+      }
+        .cta p{
+            font-size: 1.2rem;
+            color: #FFFFFF;
+            font-weight: 400;
+
+        }
+     
+
+
+
 
 
 
@@ -258,6 +294,15 @@
     .details.show {
         position: static;
         margin-top: 10px;
+    }
+    .cta{
+        height: auto;
+    }
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+    .cta p {
+        font-size: 1rem;
     }
     
 }
